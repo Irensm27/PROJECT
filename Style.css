@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: black;
+}
+.wrapper{
+    width: 1440px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*------------HEADER--------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #EFF0F3;
+
+}
+.logo{
+    width: 194px;
+    height: 45px;
+    margin: 26px 95px;
+    display: flex;
+    align-items: baseline;
+    /*justify-content: center;*/
+}
+.logo h3{
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: #001858;
+}
+.logo p{
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #6246EA;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 756px;
+    height: 44px;
+    margin: 22px 0;
+    gap: 50px;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    width: 493px;
+}
+.menu ul li a{
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #2B2C34;}
+
+.menu li.search::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("https://img.icons8.com/ios/50/search--v1.png") no-repeat center;
+    background-size: cover;
+}
+.menu button{
+    width: 213px;
+    height: 44px;
+    /*gap: 10px;*/
+    border-radius: 4px;
+    padding: 10px 17px;
+    background: #6246EA;
+    border: none;
+
+
+
+}
+
+
