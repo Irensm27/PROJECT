@@ -53,10 +53,10 @@ nav{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 756px;
+    /*width: 756px;*/
     height: 44px;
-    margin: 22px 0;
     gap: 50px;
+    margin: 22px 95px 22px 0;
 }
 .menu ul{
     display: flex;
