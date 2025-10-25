@@ -6,13 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Plus Jakarta Sans, sans-serif;
+
 }
 body{
     background: black;
 }
 .wrapper{
     width: 1440px;
-    margin: 15px auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +27,11 @@ nav{
     align-items: center;
     width: 100%;
     background: #EFF0F3;
-
+    height: 86px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    position: sticky;
+    top: 0;
 }
 .logo{
     width: 194px;
@@ -91,8 +97,223 @@ nav{
     padding: 10px 17px;
     background: #6246EA;
     border: none;
+}
+.menu button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu button a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #FFFFFE;
+}
+.menu button img{
+    width: 24px;
+    height: 24px;
+}
+/*------------------------section subscribe-1-------------------------*/
+.subscribe-1{
+    width: 100%;
+    height: 814px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF0F3;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 664px;
+    height: 345px;
+    gap: 30px;
+}
+.form h1{
+    width: 617px;
+    height: 162px;
+    font-weight: 700;
+    font-size: 64px;
+    color: #2B2C34;
+}
+.form p {
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #9A9494;
+    padding-left: 9px;
+    border-left: 3px solid #2B2C34;
 
+}
+.subscribe-form{
+    width: 609px;
+    height: 67px;
+    gap: 20px;
+    display: flex;
+}
+.subscribe-form input{
+    width: 444px;
+    border-radius: 8px;
+    border: none;
+    background: #FFFFFE;
+}
+.subscribe-form input::placeholder{
+    font-weight: 400;
+    font-size: 20px;
+    color: #C0C0C0;
+    padding-left: 20px;
+}
+.subscribe-form button{
+    width: 145px;
+    border-radius: 8px;
+    background: #6246EA;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFE;
+}
+.subscribe-1 img{
+    width: 470px;
+    height: 387px;
+    margin-left: 116px;
+}
+ /*------------------section category--------------------*/
+.category{
+    width: 100%;
+    height: 500px;
+    background: #EFF0F3;
+}
+.category-section{
+    width: 1252px;
+    height: 365px;
+    margin: 67px 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+}
+.category-text {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.category-text h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #2B2C34;
+    margin-left: 10px;
+
+}
+.category-text a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 19px;
+
+}
+.category-text a::after{
+    content: url("img/Frame286.png");
+    width: 6px;
+    height: 14px;
+    margin-left: 9px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.category-card{
+    width: 1248px;
+    height: 280px;
+    margin: 50px 0;
+    gap: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-card img{
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+}
+main{
+    width: 100%;
+    height: 2424px;
+    background: #FFFFFE;
+}
+.main-section{
+    width: 1252px;
+    height: 2344px;
+    margin: 40px 94px;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-container{
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    width: 1248px;
+    height: 425px;
+    gap: 16px;
+}
+.card{
+    width: 300px;
+    height: 425px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.card-footer{
+    width: 300px;
+    height: 425px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.details {
+    width: 184px;
+    height: 46px;
+}
+.card img{
+    width: 260px;
+    height: 198px;
+    border-radius: 12.6px;
+}
+.card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0D0D0D;
+}
+.card-footer img{
+    width: 57px;
+    height: 57px;
+}
+.Dasteen{
+    font-weight: 600;
+    font-size: 16px;
+    color: #2B2C34;
+}
+.card-footer p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #2B2C34;
 
 }
 
