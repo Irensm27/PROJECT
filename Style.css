@@ -260,13 +260,17 @@ main{
 }
 .main-container{
     height: 490px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 .cards{
     width: 1248px;
     height: 425px;
     gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 .card{
     width: 300px;
