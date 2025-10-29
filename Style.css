@@ -92,18 +92,18 @@ nav{
 .menu button{
     width: 213px;
     height: 44px;
-    /*gap: 10px;*/
     border-radius: 4px;
     padding: 10px 17px;
     background: #6246EA;
     border: none;
-}
-.menu button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-transform: capitalize;
+
 }
+
 .menu button a{
     font-weight: 700;
     font-size: 18px;
@@ -305,22 +305,30 @@ main {
     gap: 15px;
     /*margin-top: auto; !* реалістна відстань *!*/
 }
-
 .card-footer img {
     width: 57px;
     height: 57px;
-    /*border-radius: 50%;*/
+}
+.details{
+    height: 57px;
 }
 .details p:nth-child(1) {
     font-weight: 600;
     font-size: 16px;
     color: #2B2C34;
+    margin-bottom: 4px ;
 }
 .details p:nth-child(2) {
     font-weight: 400;
     font-size: 14px;
     color: #2B2C34;
 }
+/*.details{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: flex-start;*/
+/*}*/
 
 
 
