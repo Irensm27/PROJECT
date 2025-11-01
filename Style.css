@@ -248,12 +248,18 @@ nav{
 main {
     width: 100%;
     background: #FFFFFE;
-    height: 2424px;
+    height: 2504px;
 }
 
 .main-section {
+    height: 2344px;
     width: 1252px;
     margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 .main-container {
     display: flex;
@@ -269,6 +275,9 @@ main {
     width: 1248px;
 }
 .card {
+    height: 425px;
+    width: 300px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,15 +286,32 @@ main {
     /*height: auto;*/
 
 }
-.card:nth-child(1){
+.card-box-shadow{
+    height: 425px;
+    width: 300px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 12px;*/
+    /*height: auto;*/
     box-shadow: 4px 6px 13px  #D7D7D740;
+    border-radius: 12px;
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 .card img {
     width: 260px;
     height: 198px;
     border-radius: 12px;
     object-fit: cover;
-    margin-bottom: 25px;
+
 }
 .card h3 {
     font-weight: 700;
@@ -293,7 +319,6 @@ main {
     color: #2B2C34;
     width: 260px;
     text-transform: capitalize;
-    margin-bottom: 30px;
 }
 /* === Footer під карткою === */
 .card-footer {
@@ -303,6 +328,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
+    /*margin-bottom: 0;*/
     /*margin-top: auto; !* реалістна відстань *!*/
 }
 .card-footer img {
@@ -311,6 +337,10 @@ main {
 }
 .details{
     height: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .details p:nth-child(1) {
     font-weight: 600;
@@ -322,6 +352,19 @@ main {
     font-weight: 400;
     font-size: 14px;
     color: #2B2C34;
+}
+.button-main{
+    width: 165px;
+    height: 64px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #6246EA;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #FFFFFE;
+    border: none;
+    /*margin-bottom: 80px;*/
 }
 /*.details{*/
 /*    display: flex;*/
