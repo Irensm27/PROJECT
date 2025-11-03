@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Plus Jakarta Sans, sans-serif;
+    list-style-type: none;
 }
 body{
     background: black;
@@ -21,10 +22,10 @@ body{
 }
 /*------------HEADER--------------*/
 nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     background: #EFF0F3;
     height: 86px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -33,32 +34,24 @@ nav{
     top: 0;
 }
 .logo{
-    width: 194px;
-    height: 45px;
     margin: 26px 95px;
     display: flex;
     align-items: baseline;
-    /*justify-content: center;*/
 }
 .logo h3{
-    font-family: Plus Jakarta Sans, sans-serif;
     font-weight: 600;
     font-size: 36px;
-    line-height: 100%;
     color: #001858;
 }
 .logo p{
-    font-family: Plus Jakarta Sans, sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 100%;
     color: #6246EA;
 }
 .menu{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /*width: 756px;*/
     height: 44px;
     gap: 50px;
     margin: 22px 95px 22px 0;
@@ -67,15 +60,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
     gap: 50px;
     width: 493px;
 }
 .menu ul li a{
-    font-family: Plus Jakarta Sans, sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
     text-transform: capitalize;
     color: #2B2C34;}
 
@@ -100,13 +90,11 @@ nav{
     align-items: center;
     gap: 10px;
     text-transform: capitalize;
-
 }
 
 .menu button a{
     font-weight: 700;
     font-size: 18px;
-    line-height: 100%;
     text-transform: capitalize;
     color: #FFFFFE;
 }
@@ -139,8 +127,6 @@ nav{
     color: #2B2C34;
 }
 .form p {
-    width: 100%;
-    height: 50px;
     font-weight: 400;
     font-size: 20px;
     color: #9A9494;
@@ -180,9 +166,8 @@ nav{
     height: 387px;
     margin-left: 116px;
 }
- /*------------------section category--------------------*/
+ /*------------------section browse category-------------------*/
 .Browse-category{
-    width: 100%;
     height: 500px;
     background: #EFF0F3;
 }
@@ -194,7 +179,6 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 .category-text {
     width: 100%;
@@ -202,22 +186,17 @@ nav{
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
-
 }
 .category-text h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
     color: #2B2C34;
-
-
 }
 .category-text a{
     font-weight: 700;
     font-size: 20px;
     color: #000000;
-    margin-right: 19px;
-
 }
 .category-text a::after{
     content: url("img/Frame286.png");
@@ -228,18 +207,37 @@ nav{
     position: relative;
     top: 3px;
 }
-.category-card{
+.category-cards{
     width: 1248px;
     height: 280px;
     margin: 50px 0;
     gap: 37px;
     display: flex;
-
 }
-.category-card img{
+.category-card {
+    background: #FFFFFE;
     width: 220px;
     height: 280px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.category-card img{
+    width: 60px;
+    height: 60px;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+.category-card p{
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.active-card{
+    background: #6246EA;
+    color: #FFFFFE;
 }
 
 /*-----------------------main--------------------------------*/
@@ -248,7 +246,6 @@ main {
     background: #FFFFFE;
     height: 2504px;
 }
-
 .main-section {
     height: 2344px;
     width: 1252px;
@@ -264,7 +261,6 @@ main {
     flex-direction: column;
     height: 490px;
 }
-/* === Картки === */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -280,20 +276,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /*gap: 12px;*/
-    /*height: auto;*/
-
 }
-.card-box-shadow{
-    height: 425px;
-    width: 300px;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /*gap: 12px;*/
-    /*height: auto;*/
+.box-shadow{
     box-shadow: 4px 6px 13px  #D7D7D740;
     border-radius: 12px;
 }
@@ -309,7 +293,6 @@ main {
     height: 198px;
     border-radius: 12px;
     object-fit: cover;
-
 }
 .card h3 {
     font-weight: 700;
@@ -318,16 +301,13 @@ main {
     width: 260px;
     text-transform: capitalize;
 }
-/* === Footer під карткою === */
 .card-footer {
     width: 260px;
-    height: 57px; /* залишаємо як у макеті */
+    height: 57px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
-    /*margin-bottom: 0;*/
-    /*margin-top: auto; !* реалістна відстань *!*/
 }
 .card-footer img {
     width: 57px;
@@ -405,8 +385,7 @@ main {
 }
 /*--------------------------footer------------------------------*/
 footer{
-    width: 1440px;
-    /*height: 435px;*/
+    height: 465px;
     background: #E4E5E9;
 }
 .footer-container {
@@ -414,7 +393,6 @@ footer{
     height: 245px;
     display: flex;
     align-items: flex-start;
-    /*justify-content: flex-start;*/
     margin: 70px 95px;
     gap: 160px;
 }
@@ -422,14 +400,12 @@ footer{
     margin: 0 0;
 }
 .footer-left{
-    /*width: 284px;*/
     height: 138px;
     gap: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-
 }
 .footer-left p{
     font-weight: 400;
@@ -444,7 +420,6 @@ footer{
     gap: 30px;
 }
 .footer-right{
-    /*width: 805px;*/
     height: 245px;
     gap: 95px;
     display: flex;
@@ -464,7 +439,7 @@ footer{
     color: #000000;
     white-space: nowrap;
 }
-.category{
+.footer-right-category{
     height: 245px;
     gap: 25px;
     display: flex;
