@@ -1,16 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Plus Jakarta Sans, sans-serif;
-    list-style-type: none;
-}
 body{
     background: black;
+    font-family: Plus Jakarta Sans, sans-serif;
 }
 .wrapper{
     width: 1440px;
@@ -38,16 +31,6 @@ nav{
     display: flex;
     align-items: baseline;
 }
-.logo h3{
-    font-weight: 600;
-    font-size: 36px;
-    color: #001858;
-}
-.logo p{
-    font-weight: 700;
-    font-size: 18px;
-    color: #6246EA;
-}
 .menu{
     display: flex;
     justify-content: flex-start;
@@ -68,7 +51,6 @@ nav{
     font-size: 20px;
     text-transform: capitalize;
     color: #2B2C34;}
-
 .menu li.search::before {
     content: "";
     display: inline-block;
@@ -84,18 +66,13 @@ nav{
     border-radius: 4px;
     padding: 10px 17px;
     background: #6246EA;
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     text-transform: capitalize;
-}
-
-.menu button a{
     font-weight: 700;
     font-size: 18px;
-    text-transform: capitalize;
     color: #FFFFFE;
 }
 .menu button img{
@@ -132,7 +109,6 @@ nav{
     color: #9A9494;
     padding-left: 9px;
     border-left: 3px solid #2B2C34;
-
 }
 .subscribe-form{
     width: 609px;
@@ -143,8 +119,8 @@ nav{
 .subscribe-form input{
     width: 444px;
     border-radius: 8px;
-    border: none;
     background: #FFFFFE;
+    border: none;
 }
 .subscribe-form input::placeholder{
     font-weight: 400;
@@ -156,7 +132,6 @@ nav{
     width: 145px;
     border-radius: 8px;
     background: #6246EA;
-    border: none;
     font-weight: 700;
     font-size: 20px;
     color: #FFFFFE;
@@ -342,7 +317,6 @@ main {
     font-size: 20px;
     text-transform: capitalize;
     color: #FFFFFE;
-    border: none;
 }
 /*---------------------------subscribe-2--------------------------*/
 .subscribe-2{
@@ -445,19 +419,6 @@ footer{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: #E4E5E9;
-}
-.footer-left .logo h3{
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 100%;
-    color: #001858;
-}
-.footer-left .logo p{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 100%;
-    color: #6246EA;
 }
 .footer-bottom{
     width: 1249px;
@@ -471,6 +432,14 @@ footer{
     font-size: 14px;
     color: #2B2C34;
 }
-
-
+.logo h3{
+    font-weight: 600;
+    font-size: 36px;
+    color: #001858;
+}
+.logo p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #6246EA;
+}
 
